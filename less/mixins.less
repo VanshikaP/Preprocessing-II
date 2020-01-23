@@ -1,1 +1,13 @@
 // Mixins in here
+
+.test(@color){
+    background-color: @color;
+}
+.custom-btn(@width:80%, @bgcolor:teal, @color:white){
+    width: @width;
+    padding: 4% 0;
+    background-color: @bgcolor;
+    color: @color;
+    border-radius: 10px;
+    font-size: 1.8rem;
+}
