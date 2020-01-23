@@ -3,13 +3,16 @@ header{
     border-bottom: 2px dashed @navigation-border; 
 }
 .navbar{
-    max-width: 800px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     padding: 1% 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media @mobile{
+        flex-direction: column;
+    }
 
     nav{
         display: flex;
@@ -23,5 +26,11 @@ header{
             color: @font-color;
 
         }
+
+        @media @mobile {
+            width: 100%;
+            margin-top: 2%;
+        }
+
     }
 }
