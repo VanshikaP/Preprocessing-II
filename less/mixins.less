@@ -1,1 +1,22 @@
 // Mixins in here
+
+.test(@color){
+    background-color: @color;
+}
+.custom-btn(@width:100%, @bgcolor:teal, @color:white){
+    width: @width;
+    padding: 4% 0;
+    background-color: @bgcolor;
+    color: @color;
+    border-radius: 10px;
+    font-size: 1.8rem;
+}
+
+.animate(@time:3s, @color1:teal, @color2:magenta){
+    animation: color-change @time linear 0s infinite alternate-reverse;
+
+    @keyframes color-change{
+        from{background-color: @color1;}
+        to{background-color: @color2;}
+    }
+}
